@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:what_to_watch/screens/category_screen.dart';
 import 'package:what_to_watch/screens/home_screen.dart';
+import 'package:what_to_watch/screens/movie_detail_screen.dart';
 import 'package:what_to_watch/screens/profile_screen.dart';
 
 void main() => runApp(MainApp());
 const String HOME_SCREEN = '/';
 const String PROFILE_SCREEN = '/profile';
+const String MOVIEDETAL_SCREEN = '/movie-details';
 
 class MainApp extends StatelessWidget {
   @override
@@ -24,6 +25,7 @@ class MainApp extends StatelessWidget {
       routes: {
         HOME_SCREEN : (ctx) => HomeScreen(),
         PROFILE_SCREEN : (ctx) => ProfileScreen(),
+        MOVIEDETAL_SCREEN : (ctx) => MovieDetailScreen(),
       },
     );
   }
